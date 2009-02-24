@@ -1,5 +1,8 @@
 Revision history for Frontier-Client-Easy
 
+1.02    24/02/09 18:17
+	Fix POD and $VERSION
+
 1.01    24/02/09 15:38
 	Fix POD
 

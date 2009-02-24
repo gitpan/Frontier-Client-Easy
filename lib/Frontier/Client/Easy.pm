@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Frontier::Client;
 
-our $VERSION = 1.1;
+our $VERSION = 1.02;
 our $AUTOLOAD;
 
 sub new {
@@ -46,7 +46,7 @@ Frontier::Client::Easy - Perl extension for easy use of Frontier::Client
 
 	use Frontier::Client::Easy;
 
-	my $object = Frontier::Client::Easy->new('http://my.frontier.server/cgi-bin/app.cgi');
+	my $object = Frontier::Client::Easy->new(url=>'http://my.frontier.server/cgi-bin/app.cgi');
 
 	print "Calling server method foo(), result is  . " $object->foo()  . "\n";
 	print "Calling server method bar(1), result is . " $object->bar(1) . "\n";
@@ -75,9 +75,9 @@ This makes for easy migration from local to remote architectures.
 
 =item new
 
-	my $object = Frontier::Client::Easy->new($url);
+	my $object = Frontier::Client::Easy->new(url=>$url);
 
-Creates a new Frontier::Client::Easy object, takes a single parameter, the URL of the Frontier server.
+Creates a new Frontier::Client::Easy object, takes a single parameter "url", the URL of the Frontier server.
 Will not create the object unless this is provided. 
 Does not communicate with the server when the object is created so no error checking is possible
 until the first call is made.
