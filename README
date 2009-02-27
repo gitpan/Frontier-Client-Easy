@@ -13,6 +13,12 @@ To install this module, run the following commands:
 	make test
 	make install
 
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+   Frontier::Client
+
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the

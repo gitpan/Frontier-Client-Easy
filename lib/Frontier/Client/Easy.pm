@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Frontier::Client;
 
-our $VERSION = 1.02;
+our $VERSION = 1.03;
 our $AUTOLOAD;
 
 sub new {
